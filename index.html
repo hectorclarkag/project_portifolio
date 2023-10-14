@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 id="logo">Heitor De Almeida Goncalves</h2>
+            <ul class="navigation-items">
+                <li class="navigation-item"><a href="#about-me">About Me</a></li>
+                <li class="navigation-item"><a href="#projects">Projects</a></li>
+                <li class="navigation-item"><a href="#skills">Skills</a></li>
+                <li class="navigation-item"><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <div class="about-me-container">
+                <div class="about-me-text-container">
+                    <p>
+                        Hi! I'm Heitor,  and i am a programmer and designer, 
+                        recently formed in Computer Science, enfatizing in Computing Technologies 
+                        extended degree, also complete a fullstack bootcamp program at Carrer 
+                        Switch through Codecademy platform.
+                    </p>
+                    <p>
+                        Im a naturally problem solver, and very commited with my work, fast learner and social skilled.
+                    </p>
+                    <p>
+                        On my spared time I like to go to the gym, and work with 3d applications related with computer graphics.
+                    </p>
+                    <p>
+                        
+                        " Fun fact! I've been programing for "
+                        <span id="time-container">6,559,033,079</span>
+                        " seconds! "
+                    </p>
+                </div>
+                <img src="hector.jpg" alt="A photo of Heitor De Almeida Goncalves" class="portrait">
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>My first Static Web</h3>
+                </summary>
+                <img src="" alt="">
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </details>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>My first E-commerce</h3>
+                </summary>
+                <img src="" alt="">
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </details>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>My first Web App</h3>
+                </summary>
+                <img src="" alt="">
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </details>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-aws"></i>
+                <i class="fab fa-sketch"></i>
+                <i class="fab fa-figma"></i>
+                <i class="fab fa-git"></i>
+                <i class="fab fa-chrome"></i>
+                <i class="fas fa-terminal"></i>
+                <i class="fas fa-universal-access"></i>
+                <i class="fab fa-npm"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </section>
+    </main>
+    <footer>
+        "Made with "
+        <span class="heart">♥</span>
+        " in London"
+    </footer>
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const BIRTH_DAY = "04-25-1983";
+        const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+        setInterval(() => {
+        const now = new Date();
+        const difference = Math.floor(
+            (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+        );
+
+        timeContainer.innerText = intlNumberFormatter.format(difference);
+        }, 1000);
+    </script>
+</body>
+</html>
