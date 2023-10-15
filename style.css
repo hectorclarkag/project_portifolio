@@ -18,6 +18,8 @@ html, body {
     --border-radius: 200px;
   
     --font-color: rgb(187, 187, 187);
+    --orange-color: #DB592A;
+    --back-color: #0F0F0F;
 }
 
 
@@ -28,7 +30,8 @@ h2 {
 }
 
 body {
-    background-color: #101113;
+    /* background-color: #101113; */
+    background-color: var(--back-color);
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: var(--spacing-3);
@@ -39,6 +42,12 @@ body {
 }
 
 nav {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0.1px) saturate(10%) contrast(90%) brightness(50%);
+    -webkit-backdrop-filter: blur(0.1px) saturate(10%) contrast(90%) brightness(50%);
+    position: fixed;
+    top: 0;
+    width: 900px;
     display: flex;
     align-items: center;
     padding: var(--spacing-3) 0;
@@ -46,6 +55,7 @@ nav {
 
 .navigation-items {
     display: flex;
+    
     list-style-type: none;
     padding: 0;
     align-items: center;
@@ -74,7 +84,8 @@ iframe {
     min-width: 440px;
     height: 440px;
     border-radius: 12px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -84,7 +95,8 @@ footer {
 }
 
 footer > span {
-    color: #aa4e2a;
+    /* color: #aa4e2a; */
+    color: var(--orange-color);
 }
 
 section {
@@ -113,7 +125,8 @@ section {
 }
 
 .orange-text {
-    color: #aa4e2a;
+    /* color: #aa4e2a; */
+    color: var(--orange-color);
 }
 
 .icon {
@@ -137,7 +150,7 @@ a {
     color: white;
 }
 hr {
-    border: 1px solid #aa4e2a;
+    border: 1px solid var(--orange-color);
 }
 
 .section-titles {
