@@ -10,67 +10,69 @@
 <body>
     <header>
         <nav>
-            <h2 id="logo">Heitor De Almeida Goncalves</h2>
+            <div id="logo">
+                <h2>Hector Clark</h2>
+                <hr>
+            </div>
             <ul class="navigation-items">
                 <li class="navigation-item"><a href="#about-me">About Me</a></li>
                 <li class="navigation-item"><a href="#projects">Projects</a></li>
                 <li class="navigation-item"><a href="#skills">Skills</a></li>
-                <li class="navigation-item"><a href="#contact">Contact</a></li>
+                <li class="navigation-item"><a href="#contact"  class="orange-text">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="about-me">
             <div class="about-me-container">
+                
                 <div class="about-me-text-container">
-                    <p>
-                        Hi! I'm Heitor,  and i am a programmer and designer, 
-                        recently formed in Computer Science, enfatizing in Computing Technologies 
-                        extended degree, also complete a fullstack bootcamp program at Carrer 
-                        Switch through Codecademy platform.
+                    <p>Hey there,</p>
+                    <p id="presentation">
+                        I'm <span class="orange-text">Heitor</span>, fullstack software developer. 
                     </p>
                     <p>
-                        Im a naturally problem solver, and very commited with my work, fast learner and social skilled.
+                        Graduated in Computer Science, enfatizing in Computing 
+                        Technologies, with top up in fullstack bootcamp program at Carrer 
+                        Switch and Codecademy.
                     </p>
                     <p>
-                        On my spared time I like to go to the gym, and work with 3d applications related with computer graphics.
+                        Im a naturally problem solver very commited with work, fast learner and social skilled.
+                    </p>
+                    <p>
+                        On my spared time I do gym, work with 3d applications related with games and computer graphics and siging.
                     </p>
                     <p>
                         
                         " Fun fact! I've been programing for "
-                        <span id="time-container">6,559,033,079</span>
+                        <span id="time-container" class="orange-text">6,559,033,079</span>
                         " seconds! "
                     </p>
                 </div>
-                <img src="hector.jpg" alt="A photo of Heitor De Almeida Goncalves" class="portrait">
+                <img src="hector_big.png" alt="A photo of Heitor De Almeida Goncalves" class="portrait">
+                
             </div>
         </section>
         <section id="projects">
-            <h2>Projects</h2>
-            <details class="project">
-                <summary class="project-title">
-                    My first Static Web
-                </summary>
-                <img src="" alt="">
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </details>
-            <details class="project">
-                <summary class="project-title">
-                    My first E-commerce
-                </summary>
-                <img src="" alt="">
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </details>
-            <details class="project">
-                <summary class="project-title">
-                    My first Web App
-                </summary>
-                <img src="" alt="">
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </details>
+            <div class="section-titles">
+                <h2>Some Projects</h2>
+                <hr>
+            </div>
+            <div>
+                <p>QR Generator</p>
+                <iframe src="https://hectorclarkag.github.io/html_css_js_14/" frameborder="0"></iframe>
+                <p>Quote Generator</p>
+                <iframe src="https://hectorclarkag.github.io/html_css_js_11/" frameborder="0"></iframe>
+                <p>Note Generator</p>
+                <iframe src="https://hectorclarkag.github.io/html_css_js_09/" frameborder="0"></iframe>
+                <p>And many more...</p>
+            </div>
         </section>
         <section id="skills">
-            <h2>Skills</h2>
+            <div class="section-titles">
+                <h2>Skills</h2>
+                <hr>
+            </div>
             <div id="skills-container">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
@@ -89,7 +91,11 @@
             </div>
         </section>
         <section id="contact">
-            <h2>Contact</h2>
+            <div class="section-titles">
+                <h2>Contact</h2>
+                <hr>
+            </div>
+            
             <p>Have an interesting project? I would love to hear about it!</p>
             <div>
               <a href="#"><i class="fab fa-linkedin icon"></i></a>
@@ -99,9 +105,7 @@
           </section>
     </main>
     <footer>
-        "Made with "
-        <span class="heart">♥</span>
-        " in London"
+        &copy;All Rights Reserved to <span>Heitor de Almeida Goncalves</span>
     </footer>
     <script>
         const timeContainer = document.getElementById("time-container");
